@@ -1,0 +1,37 @@
+* {
+    /* Uses your system's FontAwesome naming */
+    font-family: "FontAwesome", "Ubuntu", sans-serif;
+    background-image: none;
+    transition: 200ms;
+}
+
+window {
+    background-color: rgba(40, 42, 54, 0.9); /* Dracula Background */
+}
+
+button {
+    color: #f8f8f2;
+    background-color: #44475a;
+    border: none;
+    border-radius: 0;
+    margin: 20px;
+    /* This makes the FontAwesome glyphs huge */
+    font-size: 60px;
+}
+
+button:focus,
+button:active,
+button:hover {
+    background-color: #bd93f9; /* Dracula Purple */
+    color: #282a36;
+}
+
+/* Specific color for the Shutdown button to match your Waybar power icon */
+#shutdown:hover {
+    background-color: #ff5555; /* Dracula Red */
+    color: #f8f8f2;
+}
+
+/* If you want a small label under the icon, wlogout doesn't support 
+   separate label/icon text styling easily, so we keep the glyph 
+   as the main focus for a clean, modern look. */
