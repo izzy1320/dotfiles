@@ -1,0 +1,29 @@
+theme = "dracula" # Replace with your preferred theme
+
+[editor]
+line-number = "relative" # Show relative line numbers for easier jumping
+color-modes = true       # Highlights the cursor area based on your current mode
+scrolloff = 5            # Prevent cursor from touching the edge when scrolling
+mouse = true             # Enable full mouse support for clicking and scrolling
+rulers = [80, 120]       # Draws vertical lines at 80 and 120 characters
+
+[editor.indent-guides]
+render = true
+character = "╎" # Smooth dashed line
+skip-levels = 1 # Keeps the very first column clean
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+"C-d" = ["extend_to_line_bounds", "delete_selection"]
