@@ -1,0 +1,66 @@
+/* Global font and base colors */
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.control-center {
+  background: #282828;            /* Gruvbox Dark Background / bg (#282828) */
+  color: #ebdbb2;                 /* Gruvbox Foreground / fg (#ebdbb2) */
+  border: 2px solid #fe8019;      /* Gruvbox Orange Accent (#fe8019) */
+  border-radius: 12px;
+}
+
+/* Notification Popups */
+.notification {
+  background: #282828;            /* Gruvbox Dark Background / bg (#282828) */
+  color: #ebdbb2;                 /* Gruvbox Foreground / fg (#ebdbb2) */
+  border-radius: 10px;
+  border: 1px solid #3c3836;       /* Gruvbox Selection / bg1 (#3c3836) */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  margin: 5px;
+}
+
+.notification-content {
+  padding: 10px;
+}
+
+/* Specific Notification Types */
+.critical {
+  border: 2px solid #cc241d;      /* Gruvbox Red (#cc241d) */
+}
+
+/* Headers and Buttons */
+.notification-default-action,
+.notification-action {
+  background: #3c3836;            /* Gruvbox Selection / bg1 (#3c3836) */
+  color: #ebdbb2;                 /* Gruvbox Foreground / fg (#ebdbb2) */
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background: #504945;            /* Gruvbox Surface / bg2 (#504945) */
+  border: 1px solid #fe8019;      /* Gruvbox Orange Accent (#fe8019) */
+}
+
+/* Summary and Body text */
+.summary {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fe8019;                 /* Gruvbox Orange (#fe8019) */
+}
+
+.body {
+  font-size: 14px;
+  color: #ebdbb2;                 /* Gruvbox Foreground / fg (#ebdbb2) */
+}
+
+/* The Close Button */
+.close-button {
+  background: #cc241d;            /* Gruvbox Red (#cc241d) */
+  color: #282828;                 /* Gruvbox Dark Background (#282828) */
+  border-radius: 50%;
+  padding: 2px;
+}

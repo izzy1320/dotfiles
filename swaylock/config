@@ -1,0 +1,34 @@
+# Swaylock Configuration - Gruvbox Dark Theme
+font=Ubuntu
+
+# Colors
+color=282828
+inside-color=282828
+inside-clear-color=282828
+inside-ver-color=282828
+inside-wrong-color=282828
+
+ring-color=3c3836
+ring-clear-color=d79921
+ring-ver-color=689d6a
+ring-wrong-color=cc241d
+
+key-hl-color=fe8019
+bs-hl-color=cc241d
+
+text-color=ebdbb2
+text-clear-color=ebdbb2
+text-ver-color=ebdbb2
+text-wrong-color=ebdbb2
+
+line-color=00000000
+line-clear-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+
+separator-color=00000000
+
+# Indicator settings
+indicator-radius=100
+indicator-thickness=10
+show-failed-attempts
