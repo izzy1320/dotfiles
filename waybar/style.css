@@ -1,0 +1,92 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: UbuntuMono Nerd Font Propo;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(40, 42, 54, 1);  /* Dracula Background (#282a36) */
+    color: #f8f8f2;                          /* Dracula Foreground (#f8f8f2) */
+}
+
+#workspaces button {
+    padding: 0px 7px;
+    margin: 7px 0px 7px 7px;
+    background: transparent;
+    border-radius: 2px;
+    color: #f8f8f2;                          /* Dracula Foreground (#f8f8f2) */
+}
+
+#workspaces button.focused {
+    padding: 0px 7px;
+    background: #bd93f9;                    /* Dracula Purple Accent (#bd93f9) */
+    color: #282a36;                          /* Dracula Background (#282a36) */
+    font-weight: 700;
+}
+
+#workspaces button:hover {
+    padding: 0px 7px;
+    background: rgba(189, 147, 249, 1);     /* Dracula Purple Accent (#bd93f9) */
+    box-shadow: none;
+    color: #282a36;                          /* Dracula Background (#282a36) */
+    font-weight: 700;
+}
+
+#workspaces button.urgent {
+    background: rgba(255, 85, 85, 1);       /* Dracula Red (#ff5555) */
+    color: #f8f8f2;
+}
+
+#idle_inhibitor,
+#battery,
+#bluetooth,
+#network,
+#cpu,
+#memory,
+#volume {
+    border-radius: 8px;
+    padding: 5px 8px;
+    background: rgba(68, 71, 90, 1);        /* Dracula Current Line / Selection (#44475a) */
+    margin: 5px 10px 5px 0px;
+}
+
+#pulseaudio-slider {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 8px;
+}
+
+#pulseaudio-slider slider {
+    all: unset;
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 75px;
+    border-radius: 5px;
+    background: rgba(68, 71, 90, 1);        /* Dracula Current Line / Selection (#44475a) */
+}
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background: rgba(189, 147, 249, 1);     /* Dracula Purple (#bd93f9) */
+    border-color: #6272a4;                   /* Dracula Comment / Gray (#6272a4) */
+}
+
+#tray,
+#gamemode,
+#custom-logout,
+#custom-notifications {
+    border-radius: 5px;
+    background: rgba(68, 71, 90, 1);        /* Dracula Current Line / Selection (#44475a) */
+    margin: 5px 10px 5px 0px;
+    padding: 5px 5px;
+}

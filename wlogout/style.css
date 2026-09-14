@@ -1,0 +1,33 @@
+* {
+    /* Uses your system's FontAwesome naming */
+    font-family: "FontAwesome", "Ubuntu", sans-serif;
+    background-image: none;
+    transition: 200ms;
+}
+
+window {
+    background-color: rgba(40, 42, 54, 0.9);   /* Dracula Background (#282a36) */
+}
+
+button {
+    color: #f8f8f2;                            /* Dracula Foreground (#f8f8f2) */
+    background-color: #44475a;                 /* Dracula Current Line / Selection (#44475a) */
+    border: none;
+    border-radius: 0;
+    margin: 20px;
+    /* This makes the FontAwesome glyphs huge */
+    font-size: 60px;
+}
+
+button:focus,
+button:active,
+button:hover {
+    background-color: #bd93f9;                 /* Dracula Purple Accent (#bd93f9) */
+    color: #282a36;                            /* Dracula Background (#282a36) */
+}
+
+/* Specific color for the Shutdown button */
+#shutdown:hover {
+    background-color: #ff5555;                 /* Dracula Red (#ff5555) */
+    color: #f8f8f2;                            /* Dracula Foreground (#f8f8f2) */
+}

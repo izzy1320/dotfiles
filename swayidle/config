@@ -1,0 +1,20 @@
+# Lock command registration
+lock 'pidof hyprlock || hyprlock'
+
+# Lock screen before suspend
+before-sleep 'loginctl lock-session'
+
+# Screen backlight dimming (2.5 min)
+timeout 150 'brightnessctl -s set 10' resume 'brightnessctl -r'
+
+# Keyboard backlight off (2.5 min)
+timeout 150 'brightnessctl -sd rgb:kbd_backlight set 0' resume 'brightnessctl -rd rgb:kbd_backlight'
+
+# Lock screen (5 min)
+timeout 300 'loginctl lock-session'
+
+# Turn off displays using niri IPC (5.5 min)
+timeout 330 'niri msg action power-off-monitors' resume 'niri msg action power-on-monitors && brightnessctl -r'
+
+# Suspend PC (30 min)
+timeout 1800 'systemctl suspend'
