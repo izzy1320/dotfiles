@@ -5,7 +5,7 @@ exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 # Set Cursor
-seat * xcursor_theme Adwaita 24
+seat * xcursor_theme breeze_cursors 24
 
 # Variables
 set $mod Mod4
